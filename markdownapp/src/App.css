@@ -1,0 +1,25 @@
+.main-content {
+  background-color: #87b5b5;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 1rem;
+}
+.header {
+  height: 2rem;
+  background-color: #4aa2a2;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.text-body{
+  font-size: 30px;
+  background-color: #c0d8d8;
+  border: 1px solid black;
+}
