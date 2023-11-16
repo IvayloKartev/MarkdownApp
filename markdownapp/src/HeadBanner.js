@@ -4,7 +4,7 @@ export default function Header({title, width}){
         <>
         <div className="header" style={width}>
             <p>{title}</p>
-            <i className="fas fa-expand"></i>
+            <div class="expand"><i className="fas fa-expand"></i></div>
         </div>
         </>
     )
