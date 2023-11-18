@@ -1,5 +1,7 @@
+import React from "react";
+import "./App.css";
 export default function P({value}){
     return (
-        <p>{value}</p>
+        <p className="output-p-text">{value}</p>
     );
 }

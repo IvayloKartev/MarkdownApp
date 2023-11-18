@@ -1,18 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './App.css';
 import P from './PlainText';
+import TextProcessor from './TextProcessor';
 
 export default function TextBody({ width, type, value, onChange }) {
   const handleChange = (event) => {
-    console.log('event:', event);
-    const newValue = event.target.value;
-    console.log('newValue:', newValue);
-    onChange(newValue);
+    const value = event.target.value;
+    onChange(value);
   };
-
-  useEffect(() => {
-    console.log('TextBody re-rendered. Value:', value);
-  }, [value]);
 
   if (type === 'input') {
     return (
@@ -24,9 +19,10 @@ export default function TextBody({ width, type, value, onChange }) {
       ></textarea>
     );
   } else {
+    console.log("work")
     return (
       <div style={width} className="output-text">
-        <P value={value} />
+        <TextProcessor text={value}/>
       </div>
     );
   }

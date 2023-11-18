@@ -29,8 +29,15 @@
   height: 20vh;
 }
 .output-text{
-  height: 15vh;
   background-color: #c0d8d8;
   margin-top: -30.5px;
   border: 1px solid black;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  min-height: 15vh;
+  height: auto;
+}
+.output-p-text{
+  width:35vw;
+  word-wrap: break-word;
 }
